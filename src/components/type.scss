@@ -1,0 +1,39 @@
+.container {
+    width: 375px;  
+    background-color: lightgray;
+
+    h2 {
+        text-align: center;
+    }
+    form {
+        display: flex; 
+        flex-direction: column;
+        div {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px ;
+            label {
+                flex-direction: column;
+                display: flex; 
+                text-align: center;
+                padding: 5px;
+                input {
+                    text-align: center;
+                    border-left: none;
+                    border-right: none;
+                    border-top: none;
+                    border-bottom: solid 1px black;
+                    outline: none; 
+                    background-color: lightgray;
+
+                }
+            }
+        }
+    }
+    #hello {
+        display: flex;
+        width: 375px;
+        justify-content: center;
+    }
+}
+

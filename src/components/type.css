@@ -1,0 +1,42 @@
+.container {
+  width: 375px;
+  background-color: lightgray;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container form div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.container form div label {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  padding: 5px;
+}
+
+.container form div label input {
+  text-align: center;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 1px black;
+  outline: none;
+  background-color: lightgray;
+}
+
+.container #hello {
+  display: flex;
+  width: 375px;
+  justify-content: center;
+}
