@@ -6,23 +6,23 @@ const CalcbyP = ({price, pourcent, calc, changing}) => {
     return(
         <Fragment>
             <div class="container">
-            <h2>Calculate by pourcentage:</h2>
+            <h2>Calculer une promotion :</h2>
             <form>
                 <div>
                     <label>
-                        The price: 
-                        <input type="text" name="price" placeholder="Enter price" value={price} onChange={changing}/>
+                        Le prix: 
+                        <input type="text" name="price" placeholder="Entrer le prix" value={price} onChange={changing} required />
                     </label>
                 </div>
                 <div>
                     <label>
-                        Value of solde: 
-                        <input type="text" name="pourcent" placeholder="Enter solde" value={pourcent} onChange={changing}/>
+                    Pourcentage de la reduction: 
+                        <input type="text" name="pourcent" placeholder="Entrer le pourcentage de reduction" value={pourcent} onChange={changing}/>
                     </label>
                 </div>
             </form>
             <div id="hello"> 
-                <button onClick={calc} >Calculate</button>
+                <button onClick={calc} >Calculer</button>
             </div>
             
             </div>

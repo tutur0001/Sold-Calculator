@@ -11,15 +11,32 @@ state = {
   pourcent: ''
 }
 
+getInitialState = () => ({
+  price: '',
+  pourcent: ''
+})
+
 handleClick = () => {
+
+  
   const data = { ...this.state }
   const pourcent = 100 - data.pourcent
-  const result = data.price * pourcent / 100
+  const result = Math.round((data.price * pourcent / 100) * 100 ) / 100
   alert("Le prix final est : " + result + "€")
+  this.setState(this.getInitialState());
 }
 
+
+
 onHandleEvent = (event) => {
-  console.log(this.state)
+
+  var ex = /^[0-9]+\.?[0-9]*$/;
+  if (ex.test(event.target.value) === false) {
+      event.target.value = event.target.value.substring(0, event.target.value.length - 1);
+      alert('Nombre et point seulement');
+  }
+
+
     this.setState({ [event.target.name]: event.target.value })
 
 }
